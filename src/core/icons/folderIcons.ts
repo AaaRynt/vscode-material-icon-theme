@@ -13,7 +13,7 @@ export const folderIcons: FolderTheme[] = [
       { name: 'folder-rust', folderNames: ['rust'] },
       {
         name: 'folder-robot',
-        folderNames: ['bot', 'bots', 'robot', 'robots'],
+        folderNames: ['bot', 'bots', 'robot', 'robots', 'agent', 'agents'],
       },
       {
         name: 'folder-src',
@@ -283,6 +283,7 @@ export const folderIcons: FolderTheme[] = [
           'site',
           'browser',
           'browsers',
+          'proxy',
         ],
       },
       {
@@ -300,6 +301,7 @@ export const folderIcons: FolderTheme[] = [
         name: 'folder-docker',
         folderNames: ['docker', 'dockerfiles', 'dockerhub'],
       },
+      { name: 'folder-nginx', folderNames: ['nginx'] },
       {
         name: 'folder-ngrx-store',
         folderNames: ['store'],
@@ -361,7 +363,7 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-redux-reducer',
-        folderNames: ['reducers', 'reducer'],
+        folderNames: ['reducers', 'reducer', 'redux-reducer', 'redux-reducers'],
         enabledFor: [IconPack.Redux],
       },
       {
@@ -371,6 +373,15 @@ export const folderIcons: FolderTheme[] = [
         clone: {
           base: 'folder-redux-reducer',
           color: 'purple-400',
+        },
+      },
+      {
+        name: 'folder-redux-toolkit',
+        folderNames: ['redux', 'redux-toolkit'],
+        enabledFor: [IconPack.Redux],
+        clone: {
+          base: 'folder-redux-reducer',
+          color: 'purple-300',
         },
       },
       {
@@ -546,6 +557,7 @@ export const folderIcons: FolderTheme[] = [
           'benchmark',
           'benchmarks',
           'bench',
+          'benches',
           'performance',
           'perf',
           'profiling',
@@ -584,6 +596,10 @@ export const folderIcons: FolderTheme[] = [
       {
         name: 'folder-python',
         folderNames: ['python', 'pycache', 'pytest_cache'],
+      },
+      {
+        name: 'folder-r',
+        folderNames: ['r'],
       },
       {
         name: 'folder-sandbox',
@@ -1321,7 +1337,7 @@ export const folderIcons: FolderTheme[] = [
       },
       {
         name: 'folder-gemini-ai',
-        folderNames: ['.gemini'],
+        folderNames: ['.gemini', 'gemini', 'gemini-ai', 'geminiai'],
       },
       {
         name: 'folder-input',
@@ -1354,6 +1370,35 @@ export const folderIcons: FolderTheme[] = [
       {
         name: 'folder-license',
         folderNames: ['license', 'licenses'],
+      },
+      { name: 'folder-form', folderNames: ['form', 'forms'] },
+      {
+        name: 'folder-deprecated',
+        folderNames: ['deprecated'],
+        clone: {
+          base: 'folder-archive',
+          color: 'gray-700',
+        },
+      },
+      {
+        name: 'folder-scrap',
+        folderNames: ['scrap'],
+        clone: {
+          base: 'folder-trash',
+          color: 'gray-700',
+        },
+      },
+      {
+        name: 'folder-skills',
+        folderNames: ['skill', 'skills'],
+      },
+      {
+        name: 'folder-instructions',
+        folderNames: ['instruction', 'instructions'],
+        clone: {
+          base: 'folder-meta',
+          color: 'cyan-A700',
+        },
       },
     ],
   },

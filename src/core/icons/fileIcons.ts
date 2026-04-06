@@ -44,6 +44,7 @@ export const fileIcons: FileIcons = {
         '.whitesource',
       ],
     },
+    { name: 'json_schema', fileExtensions: ['schema.json'] },
     {
       name: 'hjson',
       fileExtensions: ['hjson'],
@@ -113,6 +114,7 @@ export const fileIcons: FileIcons = {
       fileNames: ['.htaccess'],
     },
     { name: 'toml', fileExtensions: ['toml'], light: true },
+    { name: 'toon', fileExtensions: ['toon'] },
     {
       name: 'image',
       fileExtensions: [
@@ -338,6 +340,10 @@ export const fileIcons: FileIcons = {
       name: 'typescript-def',
       fileExtensions: ['d.ts', 'd.cts', 'd.mts', 'd.ets'],
     },
+    {
+      name: 'typedoc',
+      fileNames: ['typedoc.js', 'typedoc.json'],
+    },
     { name: 'markdoc', fileExtensions: ['mdoc', 'markdoc', 'markdoc.md'] },
     {
       name: 'markdoc-config',
@@ -393,6 +399,7 @@ export const fileIcons: FileIcons = {
         'vcxitems.filters',
         'vcxproj',
         'vcxproj.filters',
+        'wixproj',
       ],
       fileNames: ['.vsconfig'],
     },
@@ -1419,12 +1426,14 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'rstack',
-      fileNames: ['rspress.config.ts', 'rslint.json', 'rslint.jsonc'],
+      fileNames: ['rslint.json', 'rslint.jsonc'],
       patterns: {
         'rspack.config': FileNamePattern.Ecmascript,
         'rsbuild.config': FileNamePattern.Ecmascript,
         'rslib.config': FileNamePattern.Ecmascript,
         'rstest.config': FileNamePattern.Ecmascript,
+        'rspress.config': FileNamePattern.Ecmascript,
+        'rslint.config': FileNamePattern.Ecmascript,
       },
     },
     {
@@ -1492,6 +1501,8 @@ export const fileIcons: FileIcons = {
         '.env.dist',
         '.env.prod',
         '.env.production',
+        '.env.prod.example',
+        '.env.production.example',
         '.env.stg',
         '.env.stage',
         '.env.staging',
@@ -1912,6 +1923,7 @@ export const fileIcons: FileIcons = {
         'story.tsx',
         'stories.svelte',
         'story.mdx',
+        'stories.vue',
       ],
     },
     { name: 'wepy', fileExtensions: ['wpy'] },
@@ -2353,7 +2365,7 @@ export const fileIcons: FileIcons = {
     {
       name: 'nuget',
       fileNames: ['nuget.config', '.nuspec', 'nuget.exe'],
-      fileExtensions: ['nupkg'],
+      fileExtensions: ['nupkg', 'nuspec'],
     },
     { name: 'command', fileExtensions: ['command'] },
     {
@@ -2473,6 +2485,12 @@ export const fileIcons: FileIcons = {
       name: 'velite',
       patterns: {
         'velite.config': FileNamePattern.Ecmascript,
+      },
+    },
+    {
+      name: 'rolldown',
+      patterns: {
+        'rolldown.config': FileNamePattern.Ecmascript,
       },
     },
     { name: 'opa', fileExtensions: ['rego'] },
@@ -2914,7 +2932,10 @@ export const fileIcons: FileIcons = {
         'panda.config': FileNamePattern.Ecmascript,
       },
     },
-    { name: 'biome', fileNames: ['biome.json', 'biome.jsonc'] },
+    {
+      name: 'biome',
+      fileNames: ['biome.json', 'biome.jsonc', '.biome.json', '.biome.jsonc'],
+    },
     {
       name: 'esbuild',
       patterns: {
@@ -3140,7 +3161,7 @@ export const fileIcons: FileIcons = {
     },
     {
       name: 'label',
-      fileNames: ['.github/labeler.yml', '.github/labeler.yaml'],
+      fileNames: ['.github/labeler.yml', '.github/labeler.yaml', 'tags'],
     },
     {
       name: 'zeabur',
@@ -3310,6 +3331,8 @@ export const fileIcons: FileIcons = {
         '.oxlintrc.jsonc',
         '.oxfmtrc.json',
         '.oxfmtrc.jsonc',
+        'oxlint.config.ts',
+        'oxfmt.config.ts',
       ],
     },
     {
@@ -3427,6 +3450,18 @@ export const fileIcons: FileIcons = {
       name: 'warp',
       fileNames: ['warp.md'],
       light: true,
+    },
+    { name: 'macaulay2', fileExtensions: ['m2'] },
+    {
+      name: 'skill',
+      fileNames: ['skill.md'],
+      fileExtensions: ['skill.md', 'skills.md'],
+    },
+    {
+      name: 'instructions',
+      fileNames: ['instructions.md', 'instruction.md'],
+      fileExtensions: ['instructions.md', 'instruction.md'],
+      clone: { base: 'lib', color: 'cyan-A700' },
     },
   ]),
 };
